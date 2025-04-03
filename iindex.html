@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Profile Section -->
+        <header class="profile-section">
+            <div class="profile-pic">
+                <input type="file" id="profile-input" accept="image/*">
+                <img id="profile-pic-img" src="" alt="Profile Picture">
+            </div>
+            <input type="text" id="username-input" placeholder="Enter your name">
+            <h1 id="username-display">Your Name</h1>
+        </header>
+
+        <!-- Movie Sections -->
+        <main class="main">
+            <section class="movies-section">
+                <h2>Watchlist</h2>
+                <div class="input-group">
+                    <input type="text" id="watchlist-input" placeholder="Add movie...">
+                    <button id="add-watchlist">Add</button>
+                </div>
+                <div class="movies-container" id="watchlist"></div>
+            </section>
+
+            <section class="movies-section">
+                <h2>Rated Movies</h2>
+                <div class="input-group">
+                    <input type="text" id="rated-movie-input" placeholder="Add rated movie...">
+                    <select id="movie-rating">
+                        <option value="⭐">⭐</option>
+                        <option value="⭐⭐">⭐⭐</option>
+                        <option value="⭐⭐⭐">⭐⭐⭐</option>
+                        <option value="⭐⭐⭐⭐">⭐⭐⭐⭐</option>
+                        <option value="⭐⭐⭐⭐⭐">⭐⭐⭐⭐⭐</option>
+                    </select>
+                    <button id="add-rated-movie">Add</button>
+                </div>
+                <div class="movies-container" id="rated-movies"></div>
+            </section>
+
+            <!-- Submit Button -->
+            <button id="submit-btn">Submit</button>
+            <p id="message"></p>
+        </main>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
